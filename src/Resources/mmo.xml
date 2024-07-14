@@ -11,16 +11,28 @@
 
 	<Version>
 		<!-- Math Blaster -->
-		<VersionMin>0x00700000</VersionMin>
-		<VersionMax>0x00700000</VersionMax>
+		<VersionMin>0x08000000</VersionMin>
+		<VersionMax>0x08ffffff</VersionMax>
 		<ZoneList>DNAMorph AlienWorldJungle GauntletShooter AlienRace Spaceport ReadyRoom AlienBattleGame TrainingRoom FaceOffGame AlienWorldIce AlienAdult SnatchItMB AlienRiderGame AlienBaby AlienBattleArena SpaceRacing Academy AlienRider Hangar AlienLarvaRoom MyPodInt DNAMorph AlienWorldJungle GauntletShooter AlienRace Spaceport ReadyRoom AlienBattleGame TrainingRoom FaceOffGame AlienWorldIce AlienAdult SnatchItMB AlienRiderGame AlienBaby AlienBattleArena SpaceRacing Academy AlienRider Hangar AlienLarvaRoom MyPodInt DNAMorph AlienWorldJungle GauntletShooter AlienRace Spaceport ReadyRoom AlienBattleGame TrainingRoom FaceOffGame AlienWorldIce AlienAdult SnatchItMB AlienRiderGame AlienBaby AlienBattleArena SpaceRacing Academy AlienRider Hangar AlienLarvaRoom MyPodInt DNAMorph AlienWorldJungle GauntletShooter AlienRace Spaceport ReadyRoom AlienBattleGame TrainingRoom FaceOffGame AlienWorldIce AlienAdult SnatchItMB AlienRiderGame AlienBaby AlienBattleArena SpaceRacing Academy AlienRider Hangar AlienLarvaRoom MyPodInt DNAMorph AlienWorldJungle GauntletShooter AlienRace Spaceport ReadyRoom AlienBattleGame TrainingRoom FaceOffGame AlienWorldIce AlienAdult SnatchItMB AlienRiderGame AlienBaby AlienBattleArena SpaceRacing Academy AlienRider Hangar AlienLarvaRoom MyPodInt</ZoneList>
 	</Version>
 
 	<Version>
 		<!-- World of JumpStart -->
-		<VersionMin>0x00600000</VersionMin>
-		<VersionMax>0x00600000</VersionMax>
+		<VersionMin>0x01000000</VersionMin>
+		<VersionMax>0x01ffffff</VersionMax>
 		<ZoneList>DWMadPenguinHQINT UncleMilton EnemyValley LoungeIntUpper UncleMiltonBounceHouse Boardwalk MyRoomsInt DWMadEuropeAlps SpeedDrome WinterWonderland GemMineInt Beach TrainingIsland * IslandX SanctuaryBaby DWMadEuropeParis AdventureCanyon DWMadNYHarbor JumpStartBowlInt TownCenter SanctuaryFlying MultiplayerSystem DWMadNYCentralParkFunZone MainStreet LearningInt HomeBase Hollows FreeFallMtn ArcadeInt ShipWreckLagoon DWMadEuropeItaly MummyMazeInt EnchantedSanctuary MyVIPRoomInt DownTown DWMadNYCentralPark MyNeighborhood MountainJetpack DWMadNYTimesSquare MainStreetFunZone DuneBuggyZone LoungeInt JSStadiumInt SanctuaryAdult BroomStickArena RabbitHoleInt CoconutMall Lobby </ZoneList>
+	</Version>
+
+	<Version>
+		<!-- SuperSecret -->
+		<VersionMin>0x02000000</VersionMin>
+		<VersionMax>0x02ffffff</VersionMax>
+		<MMOServerInfo>
+			<IP xmlns="" /> <!-- empty value will be replaced by IP defined in server config -->
+			<PN xmlns="">0</PN> <!-- zero value will be replaced by Port defined in server config -->
+			<VR xmlns="">S2X</VR>
+			<DF xmlns="">true</DF>
+		</MMOServerInfo>
 	</Version>
 
 	<!-- Multiple <MMOServerInfo> child can be used instead of <ZoneList>

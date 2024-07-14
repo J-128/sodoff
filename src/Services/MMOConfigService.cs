@@ -31,6 +31,15 @@ public class MMOConfigService {
                     }
                 }
                 v.MMOServerDataArray = MMOServerDataList.ToArray();
+            } else {
+                foreach (var s in v.MMOServerDataArray) {
+                    if (String.IsNullOrEmpty(s.IPAddress)) {
+                        s.IPAddress = config.Value.MMOAdress;
+                    }
+                    if (s.Port == 0) {
+                        s.Port = config.Value.MMOPort;
+                    }
+                }
             }
         }
     }
@@ -38,7 +47,7 @@ public class MMOConfigService {
     public MMOServerInformation GetMMOServerInformation(uint version) {
         if (version >= config.Value.MMOSupportMinVersion) {
             return new MMOServerInformation {
-                MMOServerDataArray = mmoconfig.Versions.FirstOrDefault(c => c.VersionFirst >= version && c.VersionLast <= version)?.MMOServerDataArray
+                MMOServerDataArray = mmoconfig.Versions.FirstOrDefault(c => version >= c.VersionFirst && version <= c.VersionLast)?.MMOServerDataArray
             };
         } else {
             return new MMOServerInformation();

@@ -8,6 +8,15 @@ namespace sodoff.Controllers.Common;
 
 public class RatingController : Controller
 {
+    [HttpPost]
+    [Produces("application/xml")]
+    [Route("MissionWebService.asmx/GetPayout")] // used by World Of Jumpstart
+    public IActionResult GetPayout([FromForm] int points, [FromForm] string ModuleName) {
+        // TODO: better calculations, improve module determination code
+        // for now, a trusty placeholder
+
+        return Ok(points / (350 / 3));
+    }
 
     [HttpPost]
     [Produces("application/xml")]
